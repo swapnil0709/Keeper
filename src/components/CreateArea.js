@@ -38,16 +38,17 @@ function CreateArea(props) {
       content: "",
     });
   }
+
   function expand(event) {
     if (clickDetect.current.contains(event.target)) {
-      // inside click
       setIsExpanded(true);
+
       return;
     }
     setIsExpanded(false);
   }
   return (
-    <div>
+    <div ref={clickDetect}>
       <form className="create-note">
         {isExpanded ? (
           <input
@@ -58,7 +59,6 @@ function CreateArea(props) {
           />
         ) : null}
         <textarea
-          ref={clickDetect}
           name="content"
           placeholder="Take a note..."
           rows={isExpanded ? 3 : 1}

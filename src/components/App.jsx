@@ -9,7 +9,7 @@ function App() {
   const [notesArray, setNotesArray] = useState([]);
 
   function addNote(note) {
-    if (note.title == "" && note.content == "") {
+    if (note.title === "" && note.content === "") {
       return;
     }
     setNotesArray((prevValues) => {

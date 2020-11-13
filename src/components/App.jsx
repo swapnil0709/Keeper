@@ -3,13 +3,19 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
+toast.configure();
 function App() {
   const [notesArray, setNotesArray] = useState([]);
 
   function addNote(note) {
     if (note.title === "" && note.content === "") {
+      toast.warn("Please add a Title or content !!", {
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 3000,
+      });
       return;
     }
     setNotesArray((prevValues) => {

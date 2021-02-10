@@ -9,3 +9,9 @@ Check the project out at- https://sad-mcnulty-0cbf2b.netlify.app/
 ![alt text](https://github.com/swapnil0709/Keeper/blob/master/Images/Keeper%20home.png)
 
 ![alt text](https://github.com/swapnil0709/Keeper/blob/master/Images/Empty%20Note%20warning.png)
+
+# Skills:
+1. HTML
+2. CSS
+3. Javascript
+4. React
